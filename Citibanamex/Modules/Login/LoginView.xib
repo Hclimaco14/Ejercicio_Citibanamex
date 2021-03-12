@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Citibanamex" customModuleProvider="target">
+            <connections>
+                <outlet property="footerLbl" destination="8bU-8X-jUQ" id="RQt-oJ-uzN"/>
+                <outlet property="logoImgV" destination="vOc-a5-CKs" id="KnI-JA-UIa"/>
+                <outlet property="passwordTextF" destination="Bco-d6-12s" id="YPe-8t-Dud"/>
+                <outlet property="sendBtn" destination="Sog-2B-8FA" id="BJa-i1-lCG"/>
+                <outlet property="userTextF" destination="kEc-NA-zOf" id="WhN-Q0-vZz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logobanamex" translatesAutoresizingMaskIntoConstraints="NO" id="vOc-a5-CKs">
+                    <rect key="frame" x="137" y="76" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="1HE-TQ-Rwc"/>
+                        <constraint firstAttribute="height" constant="140" id="yym-wO-Bfl"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cHa-Hm-IJQ">
+                    <rect key="frame" x="32" y="248" width="350" height="130"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEc-NA-zOf">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-d6-12s">
+                            <rect key="frame" x="0.0" y="50" width="350" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-2B-8FA">
+                            <rect key="frame" x="0.0" y="100" width="350" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="sendAction:" destination="-1" eventType="touchUpInside" id="CWk-Ws-7De"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Sog-2B-8FA" firstAttribute="leading" secondItem="cHa-Hm-IJQ" secondAttribute="leading" id="9SR-0Y-0Ta"/>
+                        <constraint firstItem="kEc-NA-zOf" firstAttribute="leading" secondItem="cHa-Hm-IJQ" secondAttribute="leading" id="F9P-Iv-dAe"/>
+                        <constraint firstAttribute="trailing" secondItem="kEc-NA-zOf" secondAttribute="trailing" id="YK7-Vk-ceo"/>
+                        <constraint firstAttribute="trailing" secondItem="Sog-2B-8FA" secondAttribute="trailing" id="Ywl-lq-FUw"/>
+                        <constraint firstItem="Bco-d6-12s" firstAttribute="leading" secondItem="cHa-Hm-IJQ" secondAttribute="leading" id="nLR-dF-tXA"/>
+                        <constraint firstAttribute="trailing" secondItem="Bco-d6-12s" secondAttribute="trailing" id="t9p-Ca-WFc"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-8X-jUQ">
+                    <rect key="frame" x="32" y="825.5" width="350" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cHa-Hm-IJQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="5hE-cb-av5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cHa-Hm-IJQ" secondAttribute="trailing" constant="32" id="BCW-t7-TAr"/>
+                <constraint firstItem="vOc-a5-CKs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L2l-Xn-W52"/>
+                <constraint firstItem="8bU-8X-jUQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="MI7-2E-eII"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8bU-8X-jUQ" secondAttribute="trailing" constant="32" id="RFO-W2-hhw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8bU-8X-jUQ" secondAttribute="bottom" constant="16" id="Um6-lL-u3d"/>
+                <constraint firstItem="vOc-a5-CKs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="dP5-LE-pza"/>
+                <constraint firstItem="cHa-Hm-IJQ" firstAttribute="top" secondItem="vOc-a5-CKs" secondAttribute="bottom" constant="32" id="xjt-bh-fQf"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logobanamex" width="277" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

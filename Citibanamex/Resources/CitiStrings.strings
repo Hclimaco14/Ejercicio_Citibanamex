@@ -1,0 +1,40 @@
+/* 
+  CitiStrings.strings
+  Citibanamex
+
+  Created by Hector Climaco on 10/03/21.
+  
+*/
+
+
+//MARK: Login Module
+"USER_PLACEHOLDER" = "Usuario";
+"PASSWORD_PLACEHOLDER" = "Contraseña";
+"SEND_BUTTON" = "Ingresar";
+"FOOTER_TEXT" = "Citibanamex";
+
+//MARK: Transactions Module
+"USER_NAME" = "¡Hola Juan!";
+"LOCATION" = "Coordenadas: ";
+"TITLE_TABLE" = "Transacciones \nAutorizadas";
+
+//MARK: Transactions Cell
+"ID_TITLE" = "Id: ";
+"DESCRIPTION_TITLE" = "Descripción: ";
+"AMOUNT_TITLE" = "Cantidad: ";
+"STATUS_TITLE" = "Estatus: ";
+
+//MARK: Validations
+"EMPTY_FIELDS" = "Existen campos vacios";
+"EMAIL_FORMAT" = "El Correo no cumple con el formato correcto";
+
+
+//MARK: Alert
+"ALERT_ERROR" = "Advertencia";
+"ALERT_ACEPT" = "Aceptar";
+"LOCATION_TITLE_ALERT" = "Permitir ubicación";
+"LOCATION_BODY_ALERT" = "La utilizaremos para brindarte una mejor experiencia en la app.";
+
+//MARK: Error
+"ERROR_400" = "Sin sobre el usurio información, intente mas tarde";
+"ERROR_422" = "La información no se pudo recuperar, intente mas tarde";

@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7481C7C125F9911C00C3CD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C7C025F9911C00C3CD7C /* AppDelegate.swift */; };
+		7481C7CA25F9911C00C3CD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7481C7C925F9911C00C3CD7C /* Assets.xcassets */; };
+		7481C7CD25F9911C00C3CD7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7481C7CB25F9911C00C3CD7C /* LaunchScreen.storyboard */; };
+		7481C7D825F9911C00C3CD7C /* CitibanamexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C7D725F9911C00C3CD7C /* CitibanamexTests.swift */; };
+		7481C7E325F9911C00C3CD7C /* CitibanamexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C7E225F9911C00C3CD7C /* CitibanamexUITests.swift */; };
+		7481C7FA25F9922200C3CD7C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C7F825F9922200C3CD7C /* AppCoordinator.swift */; };
+		7481C7FB25F9922200C3CD7C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C7F925F9922200C3CD7C /* Coordinator.swift */; };
+		7481C81325F9936100C3CD7C /* BaseCitibanamexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C81225F9936100C3CD7C /* BaseCitibanamexVC.swift */; };
+		7481C83725F996FD00C3CD7C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C83125F996FD00C3CD7C /* LoginPresenter.swift */; };
+		7481C83825F996FD00C3CD7C /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C83225F996FD00C3CD7C /* LoginRouter.swift */; };
+		7481C83925F996FD00C3CD7C /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C83325F996FD00C3CD7C /* LoginProtocols.swift */; };
+		7481C83A25F996FD00C3CD7C /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C83425F996FD00C3CD7C /* LoginInteractor.swift */; };
+		7481C83B25F996FD00C3CD7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C83525F996FD00C3CD7C /* LoginView.swift */; };
+		7481C83C25F996FD00C3CD7C /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7481C83625F996FD00C3CD7C /* LoginView.xib */; };
+		7481C84125F9E64700C3CD7C /* CitiStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7481C84025F9E64700C3CD7C /* CitiStrings.strings */; };
+		7481C84725F9E72B00C3CD7C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C84625F9E72B00C3CD7C /* Extensions.swift */; };
+		7481C84D25F9E82D00C3CD7C /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C84C25F9E82D00C3CD7C /* StyleTextField.swift */; };
+		7481C85225F9E8C600C3CD7C /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C85125F9E8C600C3CD7C /* StyleView.swift */; };
+		7481C85825F9EA8F00C3CD7C /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C85725F9EA8F00C3CD7C /* Command.swift */; };
+		7481C86025F9EAE200C3CD7C /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C85F25F9EAE200C3CD7C /* EmailValidation.swift */; };
+		7481C86625F9EB1300C3CD7C /* EmptyValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C86525F9EB1300C3CD7C /* EmptyValidation.swift */; };
+		7481C86C25F9EB4200C3CD7C /* TextInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C86B25F9EB4200C3CD7C /* TextInvoker.swift */; };
+		7481C87625F9EE2F00C3CD7C /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87025F9EE2F00C3CD7C /* TransactionsPresenter.swift */; };
+		7481C87725F9EE2F00C3CD7C /* TransactionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87125F9EE2F00C3CD7C /* TransactionsRouter.swift */; };
+		7481C87825F9EE2F00C3CD7C /* TransactionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87225F9EE2F00C3CD7C /* TransactionsProtocols.swift */; };
+		7481C87925F9EE2F00C3CD7C /* TransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87325F9EE2F00C3CD7C /* TransactionsInteractor.swift */; };
+		7481C87A25F9EE2F00C3CD7C /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87425F9EE2F00C3CD7C /* TransactionsView.swift */; };
+		7481C87B25F9EE2F00C3CD7C /* TransactionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7481C87525F9EE2F00C3CD7C /* TransactionsView.xib */; };
+		7481C88025F9F3A600C3CD7C /* LocationBanamex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C87F25F9F3A600C3CD7C /* LocationBanamex.swift */; };
+		7481C89825FAB70900C3CD7C /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C89725FAB70900C3CD7C /* NetworkUtils.swift */; };
+		7481C8AA25FABEE700C3CD7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7481C8A925FABEE700C3CD7C /* Alamofire */; };
+		7481C8B325FACB4C00C3CD7C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7481C8B225FACB4C00C3CD7C /* IQKeyboardManagerSwift */; };
+		7481C8BA25FACC0800C3CD7C /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8B825FACC0800C3CD7C /* TransactionCell.swift */; };
+		7481C8BB25FACC0800C3CD7C /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7481C8B925FACC0800C3CD7C /* TransactionCell.xib */; };
+		7481C8C325FAD94B00C3CD7C /* transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7481C8C225FAD94B00C3CD7C /* transactions.json */; };
+		7481C8C825FADF3700C3CD7C /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8C725FADF3700C3CD7C /* ServicesManager.swift */; };
+		7481C8CE25FAE05B00C3CD7C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8CD25FAE05A00C3CD7C /* Transaction.swift */; };
+		7481C8D725FAE20700C3CD7C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8D625FAE20700C3CD7C /* Mapper.swift */; };
+		7481C8DC25FAE28400C3CD7C /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8DB25FAE28400C3CD7C /* JsonUtils.swift */; };
+		7481C8E425FAE4F500C3CD7C /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481C8E325FAE4F500C3CD7C /* TransactionsResponse.swift */; };
+		748CBF2E25FB3A2B003847CB /* StyleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CBF2D25FB3A2B003847CB /* StyleLabel.swift */; };
+		748CBF3325FB3D85003847CB /* StyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CBF3225FB3D85003847CB /* StyleButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7481C7D425F9911C00C3CD7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7481C7B525F9911C00C3CD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7481C7BC25F9911C00C3CD7C;
+			remoteInfo = Citibanamex;
+		};
+		7481C7DF25F9911C00C3CD7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7481C7B525F9911C00C3CD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7481C7BC25F9911C00C3CD7C;
+			remoteInfo = Citibanamex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7481C7BD25F9911C00C3CD7C /* Citibanamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citibanamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7481C7C025F9911C00C3CD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7481C7C925F9911C00C3CD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7481C7CC25F9911C00C3CD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7481C7CE25F9911C00C3CD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7481C7D325F9911C00C3CD7C /* CitibanamexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitibanamexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7481C7D725F9911C00C3CD7C /* CitibanamexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitibanamexTests.swift; sourceTree = "<group>"; };
+		7481C7D925F9911C00C3CD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7481C7DE25F9911C00C3CD7C /* CitibanamexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitibanamexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7481C7E225F9911C00C3CD7C /* CitibanamexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitibanamexUITests.swift; sourceTree = "<group>"; };
+		7481C7E425F9911C00C3CD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7481C7F825F9922200C3CD7C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7481C7F925F9922200C3CD7C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7481C81225F9936100C3CD7C /* BaseCitibanamexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCitibanamexVC.swift; sourceTree = "<group>"; };
+		7481C83125F996FD00C3CD7C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7481C83225F996FD00C3CD7C /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		7481C83325F996FD00C3CD7C /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		7481C83425F996FD00C3CD7C /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		7481C83525F996FD00C3CD7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7481C83625F996FD00C3CD7C /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		7481C84025F9E64700C3CD7C /* CitiStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CitiStrings.strings; sourceTree = "<group>"; };
+		7481C84625F9E72B00C3CD7C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7481C84C25F9E82D00C3CD7C /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
+		7481C85125F9E8C600C3CD7C /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
+		7481C85725F9EA8F00C3CD7C /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		7481C85F25F9EAE200C3CD7C /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		7481C86525F9EB1300C3CD7C /* EmptyValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyValidation.swift; sourceTree = "<group>"; };
+		7481C86B25F9EB4200C3CD7C /* TextInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInvoker.swift; sourceTree = "<group>"; };
+		7481C87025F9EE2F00C3CD7C /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
+		7481C87125F9EE2F00C3CD7C /* TransactionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRouter.swift; sourceTree = "<group>"; };
+		7481C87225F9EE2F00C3CD7C /* TransactionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProtocols.swift; sourceTree = "<group>"; };
+		7481C87325F9EE2F00C3CD7C /* TransactionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsInteractor.swift; sourceTree = "<group>"; };
+		7481C87425F9EE2F00C3CD7C /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		7481C87525F9EE2F00C3CD7C /* TransactionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsView.xib; sourceTree = "<group>"; };
+		7481C87F25F9F3A600C3CD7C /* LocationBanamex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBanamex.swift; sourceTree = "<group>"; };
+		7481C89725FAB70900C3CD7C /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		7481C8B825FACC0800C3CD7C /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		7481C8B925FACC0800C3CD7C /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		7481C8C225FAD94B00C3CD7C /* transactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions.json; sourceTree = "<group>"; };
+		7481C8C725FADF3700C3CD7C /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		7481C8CD25FAE05A00C3CD7C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		7481C8D625FAE20700C3CD7C /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		7481C8DB25FAE28400C3CD7C /* JsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtils.swift; sourceTree = "<group>"; };
+		7481C8E325FAE4F500C3CD7C /* TransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
+		748CBF2D25FB3A2B003847CB /* StyleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleLabel.swift; sourceTree = "<group>"; };
+		748CBF3225FB3D85003847CB /* StyleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7481C7BA25F9911C00C3CD7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7481C8AA25FABEE700C3CD7C /* Alamofire in Frameworks */,
+				7481C8B325FACB4C00C3CD7C /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7D025F9911C00C3CD7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7DB25F9911C00C3CD7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7481C7B425F9911C00C3CD7C = {
+			isa = PBXGroup;
+			children = (
+				7481C7BF25F9911C00C3CD7C /* Citibanamex */,
+				7481C7D625F9911C00C3CD7C /* CitibanamexTests */,
+				7481C7E125F9911C00C3CD7C /* CitibanamexUITests */,
+				7481C7BE25F9911C00C3CD7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7481C7BE25F9911C00C3CD7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7481C7BD25F9911C00C3CD7C /* Citibanamex.app */,
+				7481C7D325F9911C00C3CD7C /* CitibanamexTests.xctest */,
+				7481C7DE25F9911C00C3CD7C /* CitibanamexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7481C7BF25F9911C00C3CD7C /* Citibanamex */ = {
+			isa = PBXGroup;
+			children = (
+				7481C8CC25FAE04C00C3CD7C /* Models */,
+				7481C89625FAB6E400C3CD7C /* Network */,
+				7481C84525F9E70300C3CD7C /* Utils */,
+				7481C7F625F991EA00C3CD7C /* Coordinators */,
+				7481C7F425F991CB00C3CD7C /* Modules */,
+				7481C7F325F991BE00C3CD7C /* Resources */,
+				7481C7C025F9911C00C3CD7C /* AppDelegate.swift */,
+				7481C7CE25F9911C00C3CD7C /* Info.plist */,
+				7481C7CB25F9911C00C3CD7C /* LaunchScreen.storyboard */,
+			);
+			path = Citibanamex;
+			sourceTree = "<group>";
+		};
+		7481C7D625F9911C00C3CD7C /* CitibanamexTests */ = {
+			isa = PBXGroup;
+			children = (
+				7481C7D725F9911C00C3CD7C /* CitibanamexTests.swift */,
+				7481C7D925F9911C00C3CD7C /* Info.plist */,
+			);
+			path = CitibanamexTests;
+			sourceTree = "<group>";
+		};
+		7481C7E125F9911C00C3CD7C /* CitibanamexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7481C7E225F9911C00C3CD7C /* CitibanamexUITests.swift */,
+				7481C7E425F9911C00C3CD7C /* Info.plist */,
+			);
+			path = CitibanamexUITests;
+			sourceTree = "<group>";
+		};
+		7481C7F325F991BE00C3CD7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7481C8C225FAD94B00C3CD7C /* transactions.json */,
+				7481C84B25F9E80300C3CD7C /* Styles */,
+				7481C7C925F9911C00C3CD7C /* Assets.xcassets */,
+				7481C84025F9E64700C3CD7C /* CitiStrings.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7481C7F425F991CB00C3CD7C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7481C82D25F996B900C3CD7C /* Transactions */,
+				7481C82C25F9969700C3CD7C /* Login */,
+				7481C81125F9933B00C3CD7C /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7481C7F625F991EA00C3CD7C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7481C7F825F9922200C3CD7C /* AppCoordinator.swift */,
+				7481C7F925F9922200C3CD7C /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7481C81125F9933B00C3CD7C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7481C81225F9936100C3CD7C /* BaseCitibanamexVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7481C82C25F9969700C3CD7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7481C83125F996FD00C3CD7C /* LoginPresenter.swift */,
+				7481C83225F996FD00C3CD7C /* LoginRouter.swift */,
+				7481C83325F996FD00C3CD7C /* LoginProtocols.swift */,
+				7481C83425F996FD00C3CD7C /* LoginInteractor.swift */,
+				7481C83525F996FD00C3CD7C /* LoginView.swift */,
+				7481C83625F996FD00C3CD7C /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7481C82D25F996B900C3CD7C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				7481C8B725FACBC200C3CD7C /* TransactionCell */,
+				7481C87025F9EE2F00C3CD7C /* TransactionsPresenter.swift */,
+				7481C87125F9EE2F00C3CD7C /* TransactionsRouter.swift */,
+				7481C87225F9EE2F00C3CD7C /* TransactionsProtocols.swift */,
+				7481C87325F9EE2F00C3CD7C /* TransactionsInteractor.swift */,
+				7481C87425F9EE2F00C3CD7C /* TransactionsView.swift */,
+				7481C87525F9EE2F00C3CD7C /* TransactionsView.xib */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		7481C84525F9E70300C3CD7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7481C85625F9EA7000C3CD7C /* Command */,
+				7481C84625F9E72B00C3CD7C /* Extensions.swift */,
+				7481C87F25F9F3A600C3CD7C /* LocationBanamex.swift */,
+				7481C8D625FAE20700C3CD7C /* Mapper.swift */,
+				7481C8DB25FAE28400C3CD7C /* JsonUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7481C84B25F9E80300C3CD7C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				7481C84C25F9E82D00C3CD7C /* StyleTextField.swift */,
+				7481C85125F9E8C600C3CD7C /* StyleView.swift */,
+				748CBF2D25FB3A2B003847CB /* StyleLabel.swift */,
+				748CBF3225FB3D85003847CB /* StyleButton.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		7481C85625F9EA7000C3CD7C /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				7481C85725F9EA8F00C3CD7C /* Command.swift */,
+				7481C85F25F9EAE200C3CD7C /* EmailValidation.swift */,
+				7481C86525F9EB1300C3CD7C /* EmptyValidation.swift */,
+				7481C86B25F9EB4200C3CD7C /* TextInvoker.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		7481C89625FAB6E400C3CD7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7481C89725FAB70900C3CD7C /* NetworkUtils.swift */,
+				7481C8C725FADF3700C3CD7C /* ServicesManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7481C8B725FACBC200C3CD7C /* TransactionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7481C8B825FACC0800C3CD7C /* TransactionCell.swift */,
+				7481C8B925FACC0800C3CD7C /* TransactionCell.xib */,
+			);
+			path = TransactionCell;
+			sourceTree = "<group>";
+		};
+		7481C8CC25FAE04C00C3CD7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7481C8CD25FAE05A00C3CD7C /* Transaction.swift */,
+				7481C8E325FAE4F500C3CD7C /* TransactionsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7481C7BC25F9911C00C3CD7C /* Citibanamex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7481C7E725F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "Citibanamex" */;
+			buildPhases = (
+				7481C7B925F9911C00C3CD7C /* Sources */,
+				7481C7BA25F9911C00C3CD7C /* Frameworks */,
+				7481C7BB25F9911C00C3CD7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Citibanamex;
+			packageProductDependencies = (
+				7481C8A925FABEE700C3CD7C /* Alamofire */,
+				7481C8B225FACB4C00C3CD7C /* IQKeyboardManagerSwift */,
+			);
+			productName = Citibanamex;
+			productReference = 7481C7BD25F9911C00C3CD7C /* Citibanamex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7481C7D225F9911C00C3CD7C /* CitibanamexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7481C7EA25F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "CitibanamexTests" */;
+			buildPhases = (
+				7481C7CF25F9911C00C3CD7C /* Sources */,
+				7481C7D025F9911C00C3CD7C /* Frameworks */,
+				7481C7D125F9911C00C3CD7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7481C7D525F9911C00C3CD7C /* PBXTargetDependency */,
+			);
+			name = CitibanamexTests;
+			productName = CitibanamexTests;
+			productReference = 7481C7D325F9911C00C3CD7C /* CitibanamexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7481C7DD25F9911C00C3CD7C /* CitibanamexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7481C7ED25F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "CitibanamexUITests" */;
+			buildPhases = (
+				7481C7DA25F9911C00C3CD7C /* Sources */,
+				7481C7DB25F9911C00C3CD7C /* Frameworks */,
+				7481C7DC25F9911C00C3CD7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7481C7E025F9911C00C3CD7C /* PBXTargetDependency */,
+			);
+			name = CitibanamexUITests;
+			productName = CitibanamexUITests;
+			productReference = 7481C7DE25F9911C00C3CD7C /* CitibanamexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7481C7B525F9911C00C3CD7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7481C7BC25F9911C00C3CD7C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7481C7D225F9911C00C3CD7C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7481C7BC25F9911C00C3CD7C;
+					};
+					7481C7DD25F9911C00C3CD7C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7481C7BC25F9911C00C3CD7C;
+					};
+				};
+			};
+			buildConfigurationList = 7481C7B825F9911C00C3CD7C /* Build configuration list for PBXProject "Citibanamex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7481C7B425F9911C00C3CD7C;
+			packageReferences = (
+				7481C8A825FABEE700C3CD7C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7481C8B125FACB4C00C3CD7C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 7481C7BE25F9911C00C3CD7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7481C7BC25F9911C00C3CD7C /* Citibanamex */,
+				7481C7D225F9911C00C3CD7C /* CitibanamexTests */,
+				7481C7DD25F9911C00C3CD7C /* CitibanamexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7481C7BB25F9911C00C3CD7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7481C7CD25F9911C00C3CD7C /* LaunchScreen.storyboard in Resources */,
+				7481C7CA25F9911C00C3CD7C /* Assets.xcassets in Resources */,
+				7481C8BB25FACC0800C3CD7C /* TransactionCell.xib in Resources */,
+				7481C87B25F9EE2F00C3CD7C /* TransactionsView.xib in Resources */,
+				7481C8C325FAD94B00C3CD7C /* transactions.json in Resources */,
+				7481C84125F9E64700C3CD7C /* CitiStrings.strings in Resources */,
+				7481C83C25F996FD00C3CD7C /* LoginView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7D125F9911C00C3CD7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7DC25F9911C00C3CD7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7481C7B925F9911C00C3CD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7481C86625F9EB1300C3CD7C /* EmptyValidation.swift in Sources */,
+				7481C8DC25FAE28400C3CD7C /* JsonUtils.swift in Sources */,
+				7481C7FA25F9922200C3CD7C /* AppCoordinator.swift in Sources */,
+				7481C86025F9EAE200C3CD7C /* EmailValidation.swift in Sources */,
+				7481C87925F9EE2F00C3CD7C /* TransactionsInteractor.swift in Sources */,
+				7481C83925F996FD00C3CD7C /* LoginProtocols.swift in Sources */,
+				748CBF2E25FB3A2B003847CB /* StyleLabel.swift in Sources */,
+				7481C81325F9936100C3CD7C /* BaseCitibanamexVC.swift in Sources */,
+				7481C83B25F996FD00C3CD7C /* LoginView.swift in Sources */,
+				7481C85825F9EA8F00C3CD7C /* Command.swift in Sources */,
+				7481C8E425FAE4F500C3CD7C /* TransactionsResponse.swift in Sources */,
+				748CBF3325FB3D85003847CB /* StyleButton.swift in Sources */,
+				7481C83825F996FD00C3CD7C /* LoginRouter.swift in Sources */,
+				7481C84725F9E72B00C3CD7C /* Extensions.swift in Sources */,
+				7481C85225F9E8C600C3CD7C /* StyleView.swift in Sources */,
+				7481C84D25F9E82D00C3CD7C /* StyleTextField.swift in Sources */,
+				7481C88025F9F3A600C3CD7C /* LocationBanamex.swift in Sources */,
+				7481C8D725FAE20700C3CD7C /* Mapper.swift in Sources */,
+				7481C83A25F996FD00C3CD7C /* LoginInteractor.swift in Sources */,
+				7481C8CE25FAE05B00C3CD7C /* Transaction.swift in Sources */,
+				7481C8BA25FACC0800C3CD7C /* TransactionCell.swift in Sources */,
+				7481C87625F9EE2F00C3CD7C /* TransactionsPresenter.swift in Sources */,
+				7481C8C825FADF3700C3CD7C /* ServicesManager.swift in Sources */,
+				7481C7FB25F9922200C3CD7C /* Coordinator.swift in Sources */,
+				7481C7C125F9911C00C3CD7C /* AppDelegate.swift in Sources */,
+				7481C87825F9EE2F00C3CD7C /* TransactionsProtocols.swift in Sources */,
+				7481C87725F9EE2F00C3CD7C /* TransactionsRouter.swift in Sources */,
+				7481C83725F996FD00C3CD7C /* LoginPresenter.swift in Sources */,
+				7481C86C25F9EB4200C3CD7C /* TextInvoker.swift in Sources */,
+				7481C87A25F9EE2F00C3CD7C /* TransactionsView.swift in Sources */,
+				7481C89825FAB70900C3CD7C /* NetworkUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7CF25F9911C00C3CD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7481C7D825F9911C00C3CD7C /* CitibanamexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7481C7DA25F9911C00C3CD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7481C7E325F9911C00C3CD7C /* CitibanamexUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7481C7D525F9911C00C3CD7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7481C7BC25F9911C00C3CD7C /* Citibanamex */;
+			targetProxy = 7481C7D425F9911C00C3CD7C /* PBXContainerItemProxy */;
+		};
+		7481C7E025F9911C00C3CD7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7481C7BC25F9911C00C3CD7C /* Citibanamex */;
+			targetProxy = 7481C7DF25F9911C00C3CD7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7481C7CB25F9911C00C3CD7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7481C7CC25F9911C00C3CD7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7481C7E525F9911C00C3CD7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7481C7E625F9911C00C3CD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7481C7E825F9911C00C3CD7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = Citibanamex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.Citibanamex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7481C7E925F9911C00C3CD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAAS8HF76V;
+				INFOPLIST_FILE = Citibanamex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.Citibanamex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7481C7EB25F9911C00C3CD7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4U8FH8WH7;
+				INFOPLIST_FILE = CitibanamexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.CitibanamexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citibanamex.app/Citibanamex";
+			};
+			name = Debug;
+		};
+		7481C7EC25F9911C00C3CD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4U8FH8WH7;
+				INFOPLIST_FILE = CitibanamexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.CitibanamexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citibanamex.app/Citibanamex";
+			};
+			name = Release;
+		};
+		7481C7EE25F9911C00C3CD7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4U8FH8WH7;
+				INFOPLIST_FILE = CitibanamexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.CitibanamexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Citibanamex;
+			};
+			name = Debug;
+		};
+		7481C7EF25F9911C00C3CD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4U8FH8WH7;
+				INFOPLIST_FILE = CitibanamexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.CitibanamexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Citibanamex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7481C7B825F9911C00C3CD7C /* Build configuration list for PBXProject "Citibanamex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7481C7E525F9911C00C3CD7C /* Debug */,
+				7481C7E625F9911C00C3CD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7481C7E725F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "Citibanamex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7481C7E825F9911C00C3CD7C /* Debug */,
+				7481C7E925F9911C00C3CD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7481C7EA25F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "CitibanamexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7481C7EB25F9911C00C3CD7C /* Debug */,
+				7481C7EC25F9911C00C3CD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7481C7ED25F9911C00C3CD7C /* Build configuration list for PBXNativeTarget "CitibanamexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7481C7EE25F9911C00C3CD7C /* Debug */,
+				7481C7EF25F9911C00C3CD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7481C8A825FABEE700C3CD7C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		7481C8B125FACB4C00C3CD7C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7481C8A925FABEE700C3CD7C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7481C8A825FABEE700C3CD7C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7481C8B225FACB4C00C3CD7C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7481C8B125FACB4C00C3CD7C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7481C7B525F9911C00C3CD7C /* Project object */;
+}
